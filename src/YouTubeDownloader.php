@@ -79,13 +79,14 @@ class YouTubeDownloader
         $response = $this->client->post("https://www.youtube.com/youtubei/v1/player?key=" . $configData->getApiKey(), json_encode([
             "context" => [
                 "client" => [
-                    "androidSdkVersion" => 30,
-                    "clientName" => "ANDROID",
-                    "clientVersion" => "17.31.35",
                     "hl" => "en",
-                    "timeZone" => "UTC",
-                    "userAgent" => "com.google.android.youtube/17.31.35 (Linux; U; Android 11) gzip",
-                    "utcOffsetMinutes" => 0
+                    "clientName" => "WEB",
+                    "clientVersion" => "2.20210721.00.00",
+                    "clientFormFactor" => "UNKNOWN_FORM_FACTOR",
+                    "clientScreen" => "WATCH",
+                    "mainAppWebInfo" => [
+                        "graftUrl" => "/watch?v=JIbfzmt2LuY"
+                    ]
                 ]
             ],
             "params" => "CgIQBg==",
